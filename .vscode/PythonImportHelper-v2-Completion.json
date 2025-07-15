@@ -1,0 +1,55 @@
+[
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "janela",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "janela = pygame.display.set_mode((LARGURA, ALTURA))\npygame.display.set_caption(TITULO)\nrelogio = pygame.time.Clock()\nrodando = True\nwhile rodando:\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            rodando = False\n    janela.fill((255, 255, 255))  # Fundo branco temporário\n    pygame.display.update()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "relogio",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "relogio = pygame.time.Clock()\nrodando = True\nwhile rodando:\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            rodando = False\n    janela.fill((255, 255, 255))  # Fundo branco temporário\n    pygame.display.update()\n    relogio.tick(FPS)\npygame.quit()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "rodando",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "rodando = True\nwhile rodando:\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            rodando = False\n    janela.fill((255, 255, 255))  # Fundo branco temporário\n    pygame.display.update()\n    relogio.tick(FPS)\npygame.quit()\nsys.exit()",
+        "detail": "main",
+        "documentation": {}
+    }
+]
