@@ -26,6 +26,50 @@
         "documentation": {}
     },
     {
+        "label": "Player",
+        "importPath": "player",
+        "description": "player",
+        "isExtraImport": true,
+        "detail": "player",
+        "documentation": {}
+    },
+    {
+        "label": "LARGURA",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "LARGURA = 800\nALTURA = 600\nFPS = 60\nTITULO = \"Dino Run\"",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "ALTURA",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "ALTURA = 600\nFPS = 60\nTITULO = \"Dino Run\"",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "FPS",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "FPS = 60\nTITULO = \"Dino Run\"",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "TITULO",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "TITULO = \"Dino Run\"",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
         "label": "menu_principal",
         "kind": 2,
         "importPath": "main",
@@ -59,6 +103,24 @@
         "description": "main",
         "peekOfCode": "rodando = True\ndef menu_principal():\n    while True:\n        janela.fill((0, 0, 0))\n        pygame.display.update()\n        for evento in pygame.event.get():\n            if evento.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()\n            if evento.type == pygame.KEYDOWN:",
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "player",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "player = Player(LARGURA // 2, ALTURA - 100)\nwhile rodando:\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            rodando = False\n    janela.fill((255, 255, 255))  \n    pygame.display.update()\n    relogio.tick(FPS)\n    player.draw(janela)\npygame.quit()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "player",
+        "description": "player",
+        "peekOfCode": "class Player:\n    def __init__(self, x, y):\n        self.imagem = pygame.image.load(\"assets/dino1.png\").convert_alpha()\n        self.retangulo = self.imagem.get_rect(center=(x, y))\n    def draw(self, tela):\n        tela.blit(self.imagem, self.retangulo)",
+        "detail": "player",
         "documentation": {}
     }
 ]
