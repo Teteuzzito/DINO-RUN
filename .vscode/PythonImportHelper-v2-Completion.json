@@ -26,11 +26,20 @@
         "documentation": {}
     },
     {
+        "label": "menu_principal",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def menu_principal():\n    while True:\n        janela.fill((0, 0, 0))\n        pygame.display.update()\n        for evento in pygame.event.get():\n            if evento.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()\n            if evento.type == pygame.KEYDOWN:\n                if evento.key == pygame.K_SPACE:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
         "label": "janela",
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "janela = pygame.display.set_mode((LARGURA, ALTURA))\npygame.display.set_caption(TITULO)\nrelogio = pygame.time.Clock()\nrodando = True\nwhile rodando:\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            rodando = False\n    janela.fill((255, 255, 255))  # Fundo branco temporário\n    pygame.display.update()",
+        "peekOfCode": "janela = pygame.display.set_mode((LARGURA, ALTURA))\npygame.display.set_caption(TITULO)\nrelogio = pygame.time.Clock()\nrodando = True\ndef menu_principal():\n    while True:\n        janela.fill((0, 0, 0))\n        pygame.display.update()\n        for evento in pygame.event.get():\n            if evento.type == pygame.QUIT:",
         "detail": "main",
         "documentation": {}
     },
@@ -39,7 +48,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "relogio = pygame.time.Clock()\nrodando = True\nwhile rodando:\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            rodando = False\n    janela.fill((255, 255, 255))  # Fundo branco temporário\n    pygame.display.update()\n    relogio.tick(FPS)\npygame.quit()",
+        "peekOfCode": "relogio = pygame.time.Clock()\nrodando = True\ndef menu_principal():\n    while True:\n        janela.fill((0, 0, 0))\n        pygame.display.update()\n        for evento in pygame.event.get():\n            if evento.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()",
         "detail": "main",
         "documentation": {}
     },
@@ -48,7 +57,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "rodando = True\nwhile rodando:\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            rodando = False\n    janela.fill((255, 255, 255))  # Fundo branco temporário\n    pygame.display.update()\n    relogio.tick(FPS)\npygame.quit()\nsys.exit()",
+        "peekOfCode": "rodando = True\ndef menu_principal():\n    while True:\n        janela.fill((0, 0, 0))\n        pygame.display.update()\n        for evento in pygame.event.get():\n            if evento.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()\n            if evento.type == pygame.KEYDOWN:",
         "detail": "main",
         "documentation": {}
     }
