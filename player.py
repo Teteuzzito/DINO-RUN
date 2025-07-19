@@ -1,9 +1,8 @@
-
 import pygame
 from config import LARGURA
 
 class Player:
-    def _init_(self, x, y, som_pulo=None):
+    def __init__(self, x, y, som_pulo = None):
         self.som_pulo = som_pulo
         
         self.dino_normal = [

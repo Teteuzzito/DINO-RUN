@@ -17,7 +17,7 @@ class Obstaculo:
             pygame.transform.scale(pygame.image.load("assets/cactus3_inverted.png").convert_alpha(), (70, 50)),
         ]
 
-    def _init_(self, x, y, speed, invertido=False):
+    def __init__(self, x, y, speed, invertido=False):
         if not self.cacto_normal:
             self.carregar_imagem()
         imagens = self.cacto_invertido if invertido else self.cacto_normal
