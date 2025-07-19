@@ -1,7 +1,7 @@
 #TELA
 LARGURA = 800
 ALTURA = 600
-fps = 60
+FPS = 60
 TITULO = "Dino Run"
 
 #CORES
