@@ -1,23 +1,5 @@
 [
     {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
         "label": "pygame",
         "kind": 6,
         "isExtraImport": true,
@@ -33,15 +15,6 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "random",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
         "documentation": {}
     },
     {
@@ -61,35 +34,11 @@
         "documentation": {}
     },
     {
-        "label": "Obstaculo",
-        "importPath": "obstaculo",
-        "description": "obstaculo",
-        "isExtraImport": true,
-        "detail": "obstaculo",
-        "documentation": {}
-    },
-    {
-        "label": "carregarPontuacao",
-        "importPath": "dados_manager",
-        "description": "dados_manager",
-        "isExtraImport": true,
-        "detail": "dados_manager",
-        "documentation": {}
-    },
-    {
-        "label": "salvarRecorde",
-        "importPath": "dados_manager",
-        "description": "dados_manager",
-        "isExtraImport": true,
-        "detail": "dados_manager",
-        "documentation": {}
-    },
-    {
         "label": "LARGURA",
         "kind": 5,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "LARGURA = 800\nALTURA = 600\nfps = 60\nTITULO = \"Dino Run\"\n#CORES\nbranco = (255, 255, 255)\npreto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO",
+        "peekOfCode": "LARGURA = 800\nALTURA = 600\nFPS = 60\nTITULO = \"Dino Run\"",
         "detail": "config",
         "documentation": {}
     },
@@ -98,16 +47,16 @@
         "kind": 5,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "ALTURA = 600\nfps = 60\nTITULO = \"Dino Run\"\n#CORES\nbranco = (255, 255, 255)\npreto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO\nnome_fonte = 'assets/fonte/Pixeled.ttf'",
+        "peekOfCode": "ALTURA = 600\nFPS = 60\nTITULO = \"Dino Run\"",
         "detail": "config",
         "documentation": {}
     },
     {
-        "label": "fps",
+        "label": "FPS",
         "kind": 5,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "fps = 60\nTITULO = \"Dino Run\"\n#CORES\nbranco = (255, 255, 255)\npreto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO\nnome_fonte = 'assets/fonte/Pixeled.ttf'\ntamanho_fonte = 24",
+        "peekOfCode": "FPS = 60\nTITULO = \"Dino Run\"",
         "detail": "config",
         "documentation": {}
     },
@@ -116,143 +65,8 @@
         "kind": 5,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "TITULO = \"Dino Run\"\n#CORES\nbranco = (255, 255, 255)\npreto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO\nnome_fonte = 'assets/fonte/Pixeled.ttf'\ntamanho_fonte = 24\ntamanho_fonte_grande = 48",
+        "peekOfCode": "TITULO = \"Dino Run\"",
         "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "branco",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "branco = (255, 255, 255)\npreto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO\nnome_fonte = 'assets/fonte/Pixeled.ttf'\ntamanho_fonte = 24\ntamanho_fonte_grande = 48\n#JOGO\nvelocidade_inicial_obstaculo = 200",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "preto",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "preto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO\nnome_fonte = 'assets/fonte/Pixeled.ttf'\ntamanho_fonte = 24\ntamanho_fonte_grande = 48\n#JOGO\nvelocidade_inicial_obstaculo = 200\nintervalo_spawn_obstaculo = 0.8",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "verde",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "verde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO\nnome_fonte = 'assets/fonte/Pixeled.ttf'\ntamanho_fonte = 24\ntamanho_fonte_grande = 48\n#JOGO\nvelocidade_inicial_obstaculo = 200\nintervalo_spawn_obstaculo = 0.8\ntamanho_dino = (50, 50)",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "cor_explosao",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "cor_explosao = (255, 120, 0)\n#TEXTO\nnome_fonte = 'assets/fonte/Pixeled.ttf'\ntamanho_fonte = 24\ntamanho_fonte_grande = 48\n#JOGO\nvelocidade_inicial_obstaculo = 200\nintervalo_spawn_obstaculo = 0.8\ntamanho_dino = (50, 50)\npontuacao_maxima = 999_999",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "nome_fonte",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "nome_fonte = 'assets/fonte/Pixeled.ttf'\ntamanho_fonte = 24\ntamanho_fonte_grande = 48\n#JOGO\nvelocidade_inicial_obstaculo = 200\nintervalo_spawn_obstaculo = 0.8\ntamanho_dino = (50, 50)\npontuacao_maxima = 999_999",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "tamanho_fonte",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "tamanho_fonte = 24\ntamanho_fonte_grande = 48\n#JOGO\nvelocidade_inicial_obstaculo = 200\nintervalo_spawn_obstaculo = 0.8\ntamanho_dino = (50, 50)\npontuacao_maxima = 999_999",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "tamanho_fonte_grande",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "tamanho_fonte_grande = 48\n#JOGO\nvelocidade_inicial_obstaculo = 200\nintervalo_spawn_obstaculo = 0.8\ntamanho_dino = (50, 50)\npontuacao_maxima = 999_999",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "velocidade_inicial_obstaculo",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "velocidade_inicial_obstaculo = 200\nintervalo_spawn_obstaculo = 0.8\ntamanho_dino = (50, 50)\npontuacao_maxima = 999_999",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "intervalo_spawn_obstaculo",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "intervalo_spawn_obstaculo = 0.8\ntamanho_dino = (50, 50)\npontuacao_maxima = 999_999",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "tamanho_dino",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "tamanho_dino = (50, 50)\npontuacao_maxima = 999_999",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "pontuacao_maxima",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "pontuacao_maxima = 999_999",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "carregarPontuacao",
-        "kind": 2,
-        "importPath": "dados_manager",
-        "description": "dados_manager",
-        "peekOfCode": "def carregarPontuacao():\n  if not os.path.exists(arquivo_recorde):\n    return 0\n  try:\n    with open(arquivo_recorde, 'r') as f:\n      dados = json.load(f)\n      return dados.get('recorde', 0)\n  except Exception:\n    return 0\ndef salvarRecorde(pontuacao):",
-        "detail": "dados_manager",
-        "documentation": {}
-    },
-    {
-        "label": "salvarRecorde",
-        "kind": 2,
-        "importPath": "dados_manager",
-        "description": "dados_manager",
-        "peekOfCode": "def salvarRecorde(pontuacao):\n  try:\n    with open (arquivo_recorde, 'w') as f:\n      json.dump({'recorde': pontuacao}, f)\n  except Exception as e:\n    print(f'Erro ao salvar o recorde: {e}')",
-        "detail": "dados_manager",
-        "documentation": {}
-    },
-    {
-        "label": "arquivo_recorde",
-        "kind": 5,
-        "importPath": "dados_manager",
-        "description": "dados_manager",
-        "peekOfCode": "arquivo_recorde = 'recorde.json'\ndef carregarPontuacao():\n  if not os.path.exists(arquivo_recorde):\n    return 0\n  try:\n    with open(arquivo_recorde, 'r') as f:\n      dados = json.load(f)\n      return dados.get('recorde', 0)\n  except Exception:\n    return 0",
-        "detail": "dados_manager",
-        "documentation": {}
-    },
-    {
-        "label": "modo_cor",
-        "kind": 2,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "def modo_cor(pontuacao):\n    if (pontuacao // 5000) % 2 == 0:\n        return {'fundo': branco, 'texto': preto}\n    else:\n        return {'fundo': preto, 'texto': branco}\njanela = pygame.display.set_mode((LARGURA, ALTURA))\npygame.display.set_caption(TITULO)\nrelogio = pygame.time.Clock()\nfonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)\ntela_inicio = pygame.image.load('assets/start.png').convert()",
-        "detail": "main",
         "documentation": {}
     },
     {
@@ -260,43 +74,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def menu_principal():\n    while True:\n        janela.blit(tela_inicio, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()\n            if event.type == pygame.KEYDOWN:\n                if event.key == pygame.K_SPACE:",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "som_pulo",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "som_pulo = pygame.mixer.Sound('assets/sounds/som_pulo.wav')\nmusica_jogo = 'assets/sounds/musica_jogo.wav'\nmusica_gameover = 'assets/sounds/musica_gameover.wav'\nsom_explosao = pygame.mixer.Sound('assets/sounds/explosao.wav')\ndef modo_cor(pontuacao):\n    if (pontuacao // 5000) % 2 == 0:\n        return {'fundo': branco, 'texto': preto}\n    else:\n        return {'fundo': preto, 'texto': branco}\njanela = pygame.display.set_mode((LARGURA, ALTURA))",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "musica_jogo",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "musica_jogo = 'assets/sounds/musica_jogo.wav'\nmusica_gameover = 'assets/sounds/musica_gameover.wav'\nsom_explosao = pygame.mixer.Sound('assets/sounds/explosao.wav')\ndef modo_cor(pontuacao):\n    if (pontuacao // 5000) % 2 == 0:\n        return {'fundo': branco, 'texto': preto}\n    else:\n        return {'fundo': preto, 'texto': branco}\njanela = pygame.display.set_mode((LARGURA, ALTURA))\npygame.display.set_caption(TITULO)",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "musica_gameover",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "musica_gameover = 'assets/sounds/musica_gameover.wav'\nsom_explosao = pygame.mixer.Sound('assets/sounds/explosao.wav')\ndef modo_cor(pontuacao):\n    if (pontuacao // 5000) % 2 == 0:\n        return {'fundo': branco, 'texto': preto}\n    else:\n        return {'fundo': preto, 'texto': branco}\njanela = pygame.display.set_mode((LARGURA, ALTURA))\npygame.display.set_caption(TITULO)\nrelogio = pygame.time.Clock()",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "som_explosao",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "som_explosao = pygame.mixer.Sound('assets/sounds/explosao.wav')\ndef modo_cor(pontuacao):\n    if (pontuacao // 5000) % 2 == 0:\n        return {'fundo': branco, 'texto': preto}\n    else:\n        return {'fundo': preto, 'texto': branco}\njanela = pygame.display.set_mode((LARGURA, ALTURA))\npygame.display.set_caption(TITULO)\nrelogio = pygame.time.Clock()\nfonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)",
+        "peekOfCode": "def menu_principal():\n    while True:\n        janela.fill((0, 0, 0))\n        pygame.display.update()\n        for evento in pygame.event.get():\n            if evento.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()\n            if evento.type == pygame.KEYDOWN:\n                if evento.key == pygame.K_SPACE:",
         "detail": "main",
         "documentation": {}
     },
@@ -305,7 +83,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "janela = pygame.display.set_mode((LARGURA, ALTURA))\npygame.display.set_caption(TITULO)\nrelogio = pygame.time.Clock()\nfonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)\ntela_inicio = pygame.image.load('assets/start.png').convert()\ntela_gameover = pygame.image.load('assets/game-over.png').convert()\ndef menu_principal():\n    while True:\n        janela.blit(tela_inicio, (0, 0))\n        pygame.display.update()",
+        "peekOfCode": "janela = pygame.display.set_mode((LARGURA, ALTURA))\npygame.display.set_caption(TITULO)\nrelogio = pygame.time.Clock()\nrodando = True\ndef menu_principal():\n    while True:\n        janela.fill((0, 0, 0))\n        pygame.display.update()\n        for evento in pygame.event.get():\n            if evento.type == pygame.QUIT:",
         "detail": "main",
         "documentation": {}
     },
@@ -314,79 +92,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "relogio = pygame.time.Clock()\nfonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)\ntela_inicio = pygame.image.load('assets/start.png').convert()\ntela_gameover = pygame.image.load('assets/game-over.png').convert()\ndef menu_principal():\n    while True:\n        janela.blit(tela_inicio, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "fonte",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "fonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)\ntela_inicio = pygame.image.load('assets/start.png').convert()\ntela_gameover = pygame.image.load('assets/game-over.png').convert()\ndef menu_principal():\n    while True:\n        janela.blit(tela_inicio, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:\n                pygame.quit()",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "tela_inicio",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "tela_inicio = pygame.image.load('assets/start.png').convert()\ntela_gameover = pygame.image.load('assets/game-over.png').convert()\ndef menu_principal():\n    while True:\n        janela.blit(tela_inicio, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "tela_gameover",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "tela_gameover = pygame.image.load('assets/game-over.png').convert()\ndef menu_principal():\n    while True:\n        janela.blit(tela_inicio, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()\n            if event.type == pygame.KEYDOWN:",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "pontuacao",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "pontuacao = 0\nrecorde = carregarPontuacao()\nplayer = Player(LARGURA // 2, ALTURA - 100)\nobstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "recorde",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "recorde = carregarPontuacao()\nplayer = Player(LARGURA // 2, ALTURA - 100)\nobstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "player",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "player = Player(LARGURA // 2, ALTURA - 100)\nobstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "obstaculos",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "obstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False\n    player.velocidade_animacao = velocidade_inicial_obstaculo / 200",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "tempo_obstaculos",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "tempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False\n    player.velocidade_animacao = velocidade_inicial_obstaculo / 200\n    player.update(dt)",
+        "peekOfCode": "relogio = pygame.time.Clock()\nrodando = True\ndef menu_principal():\n    while True:\n        janela.fill((0, 0, 0))\n        pygame.display.update()\n        for evento in pygame.event.get():\n            if evento.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()",
         "detail": "main",
         "documentation": {}
     },
@@ -395,17 +101,17 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "rodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False\n    player.velocidade_animacao = velocidade_inicial_obstaculo / 200\n    player.update(dt)\n    tempo_obstaculos += dt\n    if tempo_obstaculos >= intervalo_spawn_obstaculo:",
+        "peekOfCode": "rodando = True\ndef menu_principal():\n    while True:\n        janela.fill((0, 0, 0))\n        pygame.display.update()\n        for evento in pygame.event.get():\n            if evento.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()\n            if evento.type == pygame.KEYDOWN:",
         "detail": "main",
         "documentation": {}
     },
     {
-        "label": "Obstaculo",
-        "kind": 6,
-        "importPath": "obstaculo",
-        "description": "obstaculo",
-        "peekOfCode": "class Obstaculo:\n  cacto_normal = []\n  cacto_invertido = []\n  def carregar_imagem():\n    Obstaculo.cacto_normal = [\n      pygame.transform.scale(pygame.image.load('assets/cactus1.png').convert_alpha(), (30, 50)),\n      pygame.transform.scale(pygame.image.load('assets/cactus2.png').convert_alpha(), (50, 50)),\n      pygame.transform.scale(pygame.image.load('assets/cactus3.png').convert_alpha(), (70, 50)),\n    ]\n    Obstaculo.cacto_invertido = [",
-        "detail": "obstaculo",
+        "label": "player",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "player = Player(LARGURA // 2, ALTURA - 100)\nwhile rodando:\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            rodando = False\n    janela.fill((255, 255, 255))  \n    pygame.display.update()\n    relogio.tick(FPS)\n    player.draw(janela)\npygame.quit()",
+        "detail": "main",
         "documentation": {}
     },
     {
@@ -413,7 +119,7 @@
         "kind": 6,
         "importPath": "player",
         "description": "player",
-        "peekOfCode": "class Player:\n    def __init__(self, x, y):\n        self.dino_normal = [\n            pygame.transform.scale(pygame.image.load('assets/dino1.png').convert_alpha(), (60, 60)),\n            pygame.transform.scale(pygame.image.load('assets/dino2.png').convert_alpha(), (60, 60)),\n        ]\n        self.dino_invertido = [\n            pygame.transform.scale(pygame.image.load('assets/dino_inverted1.png').convert_alpha(), (60, 60)),\n            pygame.transform.scale(pygame.image.load('assets/dino_inverted2.png').convert_alpha(), (60, 60)),\n        ]",
+        "peekOfCode": "class Player:\n    def __init__(self, x, y):\n        self.imagem = pygame.image.load(\"assets/dino1.png\").convert_alpha()\n        self.retangulo = self.imagem.get_rect(center=(x, y))\n    def draw(self, tela):\n        tela.blit(self.imagem, self.retangulo)",
         "detail": "player",
         "documentation": {}
     }
