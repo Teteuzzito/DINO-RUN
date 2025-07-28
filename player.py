@@ -30,7 +30,7 @@ class Player:
 
         self.tempo_animacao = 0
         self.intervalo_base_animacao = 0.5
-        self.velocidade_animacao = 1.0  # padrão
+        self.velocidade_animacao = 1.0
 
     def update(self, dt):
         keys = pygame.key.get_pressed()

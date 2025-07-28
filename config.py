@@ -2,7 +2,7 @@
 LARGURA = 800
 ALTURA = 600
 FPS = 60
-TITULO = "Dino Run"
+TITULO = "DINO RUN"
 
 #CORES
 branco = (255, 255, 255)

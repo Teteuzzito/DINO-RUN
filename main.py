@@ -31,14 +31,14 @@ relogio = pygame.time.Clock()
 fonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)
 
 tela_inicio = pygame.image.load('assets/start.png').convert()
-tela_gameover = pygame.image.load('assets/game-over.png').convert()
+imagem_gameover = pygame.image.load('assets/game-over.png').convert()
 
 def tela_gameover():
     pygame.mixer.music.stop()
     pygame.mixer.music.load(musica_gameover)
     pygame.mixer.music.play()
     while True:
-        janela.blit(tela_gameover, (0, 0))
+        janela.blit(imagem_gameover, (0, 0))
         pygame.display.update()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -110,7 +110,7 @@ while rodando:
         obstaculos.append(Obstaculo(x, -40, velocidade_inicial_obstaculo, invertido=modo_invertido))
         tempo_obstaculos = 0
         
-    if pontuacao >0 and pontuacao % 1000 == 0:
+    if pontuacao > 0 and pontuacao % 1000 == 0:
         velocidade_inicial_obstaculo += 15
         
     for obs in obstaculos[:]:
@@ -153,7 +153,7 @@ while rodando:
     
     player.draw(janela)
     
-    texto_pontuacao = fonte.render(f'Recorde: {recorde}', True, cores['texto'])
+    texto_pontuacao = fonte.render(f'Pontuação: {pontuacao}', True, cores['texto'])
     texto_recorde = fonte.render(f'Recorde: {recorde}', True, cores['texto'])
     janela.blit(texto_pontuacao, (10, 10))
     janela.blit(texto_recorde, (10, 40))
