@@ -97,7 +97,7 @@
         "kind": 5,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "LARGURA = 800\nALTURA = 600\nfps = 60\nTITULO = \"Dino Run\"\n#CORES\nbranco = (255, 255, 255)\npreto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO",
+        "peekOfCode": "LARGURA = 800\nALTURA = 600\nFPS = 60\nTITULO = \"Dino Run\"\n#CORES\nbranco = (255, 255, 255)\npreto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO",
         "detail": "config",
         "documentation": {}
     },
@@ -106,16 +106,16 @@
         "kind": 5,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "ALTURA = 600\nfps = 60\nTITULO = \"Dino Run\"\n#CORES\nbranco = (255, 255, 255)\npreto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO\nnome_fonte = 'assets/fonte/Pixeled.ttf'",
+        "peekOfCode": "ALTURA = 600\nFPS = 60\nTITULO = \"Dino Run\"\n#CORES\nbranco = (255, 255, 255)\npreto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO\nnome_fonte = 'assets/fonte/Pixeled.ttf'",
         "detail": "config",
         "documentation": {}
     },
     {
-        "label": "fps",
+        "label": "FPS",
         "kind": 5,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "fps = 60\nTITULO = \"Dino Run\"\n#CORES\nbranco = (255, 255, 255)\npreto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO\nnome_fonte = 'assets/fonte/Pixeled.ttf'\ntamanho_fonte = 24",
+        "peekOfCode": "FPS = 60\nTITULO = \"Dino Run\"\n#CORES\nbranco = (255, 255, 255)\npreto = (0, 0, 0)\nverde = (0, 255, 0)\ncor_explosao = (255, 120, 0)\n#TEXTO\nnome_fonte = 'assets/fonte/Pixeled.ttf'\ntamanho_fonte = 24",
         "detail": "config",
         "documentation": {}
     },
@@ -264,6 +264,24 @@
         "documentation": {}
     },
     {
+        "label": "tela_gameover",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def tela_gameover():\n    pygame.mixer.music.stop()\n    pygame.mixer.music.load(musica_gameover)\n    pygame.mixer.music.play()\n    while True:\n        janela.blit(imagem_gameover, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:\n                pygame.quit()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "tela_explosao",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def tela_explosao():\n    pygame.mixer.music.stop()\n    som_explosao.play()\n    fonte = pygame.font.SysFont(nome_fonte, 36)\n    pequeno = pygame.font.SysFont(nome_fonte, tamanho_fonte)\n    texto = fonte.render('EXTINCÃO DOS DINOSSAUROS!', True, cor_explosao)\n    mensagem = pequeno.render('VOCÊ ZEROU O JOGO! Parabéns!', False, branco)\n    for _ in range(60):\n        janela.fill((random.randint(200, 255), random.randint(50, 100), 0))\n        janela.blit(texto, (LARGURA // 2 - texto.get_width() // 2, ALTURA // 2 - 40))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
         "label": "menu_principal",
         "kind": 2,
         "importPath": "main",
@@ -313,7 +331,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "janela = pygame.display.set_mode((LARGURA, ALTURA))\npygame.display.set_caption(TITULO)\nrelogio = pygame.time.Clock()\nfonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)\ntela_inicio = pygame.image.load('assets/start.png').convert()\ntela_gameover = pygame.image.load('assets/game-over.png').convert()\ndef menu_principal():\n    while True:\n        janela.blit(tela_inicio, (0, 0))\n        pygame.display.update()",
+        "peekOfCode": "janela = pygame.display.set_mode((LARGURA, ALTURA))\npygame.display.set_caption(TITULO)\nrelogio = pygame.time.Clock()\nfonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)\ntela_inicio = pygame.image.load('assets/start.png').convert()\nimagem_gameover = pygame.image.load('assets/game-over.png').convert()\ndef tela_gameover():\n    pygame.mixer.music.stop()\n    pygame.mixer.music.load(musica_gameover)\n    pygame.mixer.music.play()",
         "detail": "main",
         "documentation": {}
     },
@@ -322,7 +340,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "relogio = pygame.time.Clock()\nfonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)\ntela_inicio = pygame.image.load('assets/start.png').convert()\ntela_gameover = pygame.image.load('assets/game-over.png').convert()\ndef menu_principal():\n    while True:\n        janela.blit(tela_inicio, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:",
+        "peekOfCode": "relogio = pygame.time.Clock()\nfonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)\ntela_inicio = pygame.image.load('assets/start.png').convert()\nimagem_gameover = pygame.image.load('assets/game-over.png').convert()\ndef tela_gameover():\n    pygame.mixer.music.stop()\n    pygame.mixer.music.load(musica_gameover)\n    pygame.mixer.music.play()\n    while True:\n        janela.blit(imagem_gameover, (0, 0))",
         "detail": "main",
         "documentation": {}
     },
@@ -331,7 +349,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "fonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)\ntela_inicio = pygame.image.load('assets/start.png').convert()\ntela_gameover = pygame.image.load('assets/game-over.png').convert()\ndef menu_principal():\n    while True:\n        janela.blit(tela_inicio, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:\n                pygame.quit()",
+        "peekOfCode": "fonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)\ntela_inicio = pygame.image.load('assets/start.png').convert()\nimagem_gameover = pygame.image.load('assets/game-over.png').convert()\ndef tela_gameover():\n    pygame.mixer.music.stop()\n    pygame.mixer.music.load(musica_gameover)\n    pygame.mixer.music.play()\n    while True:\n        janela.blit(imagem_gameover, (0, 0))\n        pygame.display.update()",
         "detail": "main",
         "documentation": {}
     },
@@ -340,16 +358,16 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "tela_inicio = pygame.image.load('assets/start.png').convert()\ntela_gameover = pygame.image.load('assets/game-over.png').convert()\ndef menu_principal():\n    while True:\n        janela.blit(tela_inicio, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()",
+        "peekOfCode": "tela_inicio = pygame.image.load('assets/start.png').convert()\nimagem_gameover = pygame.image.load('assets/game-over.png').convert()\ndef tela_gameover():\n    pygame.mixer.music.stop()\n    pygame.mixer.music.load(musica_gameover)\n    pygame.mixer.music.play()\n    while True:\n        janela.blit(imagem_gameover, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():",
         "detail": "main",
         "documentation": {}
     },
     {
-        "label": "tela_gameover",
+        "label": "imagem_gameover",
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "tela_gameover = pygame.image.load('assets/game-over.png').convert()\ndef menu_principal():\n    while True:\n        janela.blit(tela_inicio, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()\n            if event.type == pygame.KEYDOWN:",
+        "peekOfCode": "imagem_gameover = pygame.image.load('assets/game-over.png').convert()\ndef tela_gameover():\n    pygame.mixer.music.stop()\n    pygame.mixer.music.load(musica_gameover)\n    pygame.mixer.music.play()\n    while True:\n        janela.blit(imagem_gameover, (0, 0))\n        pygame.display.update()\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:",
         "detail": "main",
         "documentation": {}
     },
@@ -358,7 +376,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "pontuacao = 0\nrecorde = carregarPontuacao()\nplayer = Player(LARGURA // 2, ALTURA - 100)\nobstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():",
+        "peekOfCode": "pontuacao = 0\nrecorde = carregarPontuacao()\nplayer = Player(LARGURA // 2, ALTURA - 200, som_pulo = som_pulo)\nobstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(FPS) / 1000\n    for event in pygame.event.get():",
         "detail": "main",
         "documentation": {}
     },
@@ -367,7 +385,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "recorde = carregarPontuacao()\nplayer = Player(LARGURA // 2, ALTURA - 100)\nobstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:",
+        "peekOfCode": "recorde = carregarPontuacao()\nplayer = Player(LARGURA // 2, ALTURA - 200, som_pulo = som_pulo)\nobstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(FPS) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:",
         "detail": "main",
         "documentation": {}
     },
@@ -376,7 +394,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "player = Player(LARGURA // 2, ALTURA - 100)\nobstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False",
+        "peekOfCode": "player = Player(LARGURA // 2, ALTURA - 200, som_pulo = som_pulo)\nobstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(FPS) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False",
         "detail": "main",
         "documentation": {}
     },
@@ -385,7 +403,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "obstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False\n    player.velocidade_animacao = velocidade_inicial_obstaculo / 200",
+        "peekOfCode": "obstaculos = []\ntempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(FPS) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False\n    player.velocidade_animacao = velocidade_inicial_obstaculo / 200",
         "detail": "main",
         "documentation": {}
     },
@@ -394,7 +412,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "tempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False\n    player.velocidade_animacao = velocidade_inicial_obstaculo / 200\n    player.update(dt)",
+        "peekOfCode": "tempo_obstaculos = 0\nObstaculo.carregar_imagem()\nrodando = True\nwhile rodando:\n    dt = relogio.tick(FPS) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False\n    player.velocidade_animacao = velocidade_inicial_obstaculo / 200\n    player.update(dt)",
         "detail": "main",
         "documentation": {}
     },
@@ -403,7 +421,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "rodando = True\nwhile rodando:\n    dt = relogio.tick(fps) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False\n    player.velocidade_animacao = velocidade_inicial_obstaculo / 200\n    player.update(dt)\n    tempo_obstaculos += dt\n    if tempo_obstaculos >= intervalo_spawn_obstaculo:",
+        "peekOfCode": "rodando = True\nwhile rodando:\n    dt = relogio.tick(FPS) / 1000\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            rodando = False\n    player.velocidade_animacao = velocidade_inicial_obstaculo / 200\n    player.update(dt)\n    tempo_obstaculos += dt\n    if tempo_obstaculos >= intervalo_spawn_obstaculo:",
         "detail": "main",
         "documentation": {}
     },
@@ -421,7 +439,7 @@
         "kind": 6,
         "importPath": "player",
         "description": "player",
-        "peekOfCode": "class Player:\n    def _init_(self, x, y, som_pulo=None):\n        self.som_pulo = som_pulo\n        self.dino_normal = [\n            pygame.transform.scale(pygame.image.load(\"assets/dino1.png\").convert_alpha(), (60, 60)),\n            pygame.transform.scale(pygame.image.load(\"assets/dino2.png\").convert_alpha(), (60, 60)),\n        ]\n        self.dino_invertido = [\n            pygame.transform.scale(pygame.image.load(\"assets/dino_inverted1.png\").convert_alpha(), (60, 60)),\n            pygame.transform.scale(pygame.image.load(\"assets/dino_inverted2.png\").convert_alpha(), (60, 60)),",
+        "peekOfCode": "class Player:\n    def __init__(self, x, y, som_pulo = None):\n        self.som_pulo = som_pulo\n        self.dino_normal = [\n            pygame.transform.scale(pygame.image.load(\"assets/dino1.png\").convert_alpha(), (60, 60)),\n            pygame.transform.scale(pygame.image.load(\"assets/dino2.png\").convert_alpha(), (60, 60)),\n        ]\n        self.dino_invertido = [\n            pygame.transform.scale(pygame.image.load(\"assets/dino_inverted1.png\").convert_alpha(), (60, 60)),\n            pygame.transform.scale(pygame.image.load(\"assets/dino_inverted2.png\").convert_alpha(), (60, 60)),",
         "detail": "player",
         "documentation": {}
     }

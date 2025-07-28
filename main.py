@@ -31,14 +31,14 @@ relogio = pygame.time.Clock()
 fonte = pygame.font.SysFont(nome_fonte, tamanho_fonte)
 
 tela_inicio = pygame.image.load('assets/start.png').convert()
-tela_gameover = pygame.image.load('assets/game-over.png').convert()
+imagem_gameover = pygame.image.load('assets/game-over.png').convert()
 
 def tela_gameover():
     pygame.mixer.music.stop()
     pygame.mixer.music.load(musica_gameover)
     pygame.mixer.music.play()
     while True:
-        janela.blit(tela_gameover, (0, 0))
+        janela.blit(imagem_gameover, (0, 0))
         pygame.display.update()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -47,7 +47,7 @@ def tela_gameover():
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
                     return True
-                if event.key == pygame.K_ESCAPE:
+                if event.key == pygame.K_ESCAPE: 
                     return False
 
 def tela_explosao():
