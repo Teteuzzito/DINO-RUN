@@ -47,7 +47,7 @@ def tela_gameover():
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
                     return True
-                if event.key == pygame.K_ESCAPE:
+                if event.key == pygame.K_ESCAPE: 
                     return False
 
 def tela_explosao():
